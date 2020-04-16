@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>首页</title>
+        <style>
+            *{box-sizing:border-box;}
+            body{
+                margin:0 auto;padding:0;
+                width:100%;
+                background-color:DarkSlateBlue;
+            }
+            .top {text-align: center;margin:30px 10px 10px;}
+            .top img{width:100%;}
+            
+            .top-content{max-width: 100%;}
+            .top-content .video{
+                width: 100%;
+                padding: 5%;
+                background:url("images/video-bg.png") no-repeat;
+                background-size:100% 100%;
+                border:2px solid red;
+            }
+            .video video{width:100%;}
+
+            .top-content .imageshow{
+                width: 100%;height:150px;
+                padding: 5%;
+                background:url("images/story-bg.png") no-repeat;
+                background-size:100% 100%;
+                border:2px solid red;
+            }
+
+            footer{
+                background-color:grey;text-align:center;
+                margin-top:10px;
+                text-align:center;
+                padding:10px;
+                font-size:10px;
+            }
+            .middle{
+                background:url("images/dailog-satellite.png") no-repeat;
+                background-size:100% 100%;
+                border:2px solid red;
+                text-align:center;
+                margin:0 5% 0 15%;
+                font-size:10px;
+                position:relative;
+            }
+            .middle img{
+                position: absolute;
+                width:50px;
+                top:0;left:-50px;
+                
+            }
+
+            .people{
+                /* background:url("images/earth.png") no-repeat top center; */
+                
+                background-size:cover;
+                border:2px solid red;
+                position:relative;
+            }
+            .people img.moon{
+                position: absolute;
+                top:0;left:0;
+                width:80px;
+            }
+            .people .earth{
+                width:100%;height:150px;min-height:150px;object-fit: cover;
+                object-position: top;
+                position:absolute;top:0;left:0;
+            }
+            .people .moon-people{
+                height:150px;
+                position:relative;
+                border:2px solid green;
+            }
+
+            .people .moon-people > div{
+                position: absolute;
+                width:8%;
+                border:1px solid red;
+            }
+            .people .moon-people > div:first-child{
+                top:30%;left:20%;
+            }
+            .people .moon-people > div:nth-child(2){
+                top:22%;left:33%;
+            }
+            .people .moon-people > div:nth-child(3){
+                top:11%;left:40%;
+            }
+            .people .moon-people > div:nth-child(4){
+                top:18%;left:57%;
+            }
+            .people .moon-people > div:last-child{
+                top:30%;left:70%;
+            }
+            .people .img1{
+                width:100%;
+            }
+            .people .img2{
+                width:100%;position:absolute;top:0;left:0;
+                border:5px solid transparent;
+                border-radius: 50%;;
+            }
+
+            .activity div{height:150;}
+            .activity div img{width:100%;height:100%;object-fit: cover;}
+        </style>
+    </head>
+    <body>
+        <div class="top"><img src="images/festival-title-img.png"></div>
+        <div class="top-content">
+            <div class="video" >
+                <video controls poster="images/video.jpg" src="https://qncdn.wanshifu.com/wanshifu/video/masterDay.mp4"></video>
+            </div>
+            <div class="imageshow">
+                一些文字。。。。
+            </div>
+        </div>
+        <div class="middle">
+            <p>故事星球,请为你心中最优秀的师傅点赞！</p>
+            <p>已有1170名师傅参与</p>
+            <img src="images/satellite.png">
+        </div>
+        <div class="people">
+            <img class="earth" src="images/earth.png">
+            <img class="moon" src="images/moon.png">
+            <div class="moon-people">
+                <div><img class="img1" src="images/sf-like.png"><img class="img2" src="images/people1.png"></div>
+                <div><img class="img1" src="images/sf-like.png"><img class="img2" src="images/people1.png"></div>
+                <div><img class="img1" src="images/sf-like.png"><img class="img2" src="images/people1.png"></div>
+                <div><img class="img1" src="images/sf-like.png"><img class="img2" src="images/people1.png"></div>
+                <div><img class="img1" src="images/sf-like.png"><img class="img2" src="images/people1.png"></div>
+            </div>
+            <div class="activity">
+                <div class="chongzhi"><img src="images/activity-1.jpg"></div>
+                <div class="qianggou"><img src="images/activity-2.jpg"></div>
+            </div>
+        </div>
+        <footer>2013-2020 www.wanshifu.com 万师傅版权所有
+            粤ICP备14009356号-2 增值电信业务</footer>
+    </body>
+</html>
